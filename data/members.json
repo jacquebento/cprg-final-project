@@ -1,54 +1,54 @@
 {
-    "members": [
-      {
-        "name": "Flora Boutique",
-        "address": "CK34",
-        "phone": "999-555-2222",
-        "website": "floraboutique.com",
-        "logo": "https://jacquebento.github.io/cprg-final-project/main/images/logos_directory/logo1.png"
-        
-      },
-      {
-        "name": "Anna Katrina Handmade Jewlery",
-        "address": "FC30",
-        "phone": "999-123-4456",
-        "website": "anakatrina.com",
-        "logo": "https://jacquebento.github.io/cprg-final-project/main/images/logos_directory/logo2.png"
-      },
-      {
-        "name": "Mega Shop",
-        "address": "CK52",
-        "phone": "999-555-2299",
-        "website": "megashop.com",
-        "logo": "https://jacquebento.github.io/cprg-final-project/main/images/logos_directory/logo3.png"
-      },
-      {
-        "name": "Valnite Store",
-        "address": "CK29",
-        "phone": "999-123-0000",
-        "website": "valnite.com",
-        "logo": "https://jacquebento.github.io/cprg-final-project/main/images/logos_directory/logo4.png"
-      },
-      {
-        "name": "Mary Beauty",
-        "address": "FC12",
-        "phone": "999-300-4456",
-        "website": "marybeauty.com",
-        "logo": "https://jacquebento.github.io/cprg-final-project/main/images/logos_directory/logo5.png"
-      },
-      {
-        "name": "Calystia Beauty Studio",
-        "address": "FC5",
-        "phone": "999-123-3000",
-        "website": "calystiastudio.com",
-        "logo": "https://jacquebento.github.io/cprg-final-project/main/images/logos_directory/logo6.png"
-      },
-      {
-        "name": "Angry Lion Art and Design",
-        "address": "CK15",
-        "phone": "999-900-9956",
-        "website": "angrylion.com",
-        "logo": "https://jacquebento.github.io/cprg-final-project/main/images/logos_directory/logo7.png"
-      }
-    ]
-  }
+  "members": [
+    {
+      "name": "Flora Boutique",
+      "address": "CK34",
+      "phone": "999-555-2222",
+      "website": "floraboutique.com",
+      "logo": "https://jacquebento.github.io/cprg-final-project/images/logos_directory/logo1.png"
+      
+    },
+    {
+      "name": "Anna Katrina Handmade Jewlery",
+      "address": "FC30",
+      "phone": "999-123-4456",
+      "website": "anakatrina.com",
+      "logo": "https://jacquebento.github.io/cprg-final-project/images/logos_directory/logo2.png"
+    },
+    {
+      "name": "Mega Shop",
+      "address": "CK52",
+      "phone": "999-555-2299",
+      "website": "megashop.com",
+      "logo": "https://jacquebento.github.io/cprg-final-project/images/logos_directory/logo3.png"
+    },
+    {
+      "name": "Valnite Store",
+      "address": "CK29",
+      "phone": "999-123-0000",
+      "website": "valnite.com",
+      "logo": "https://jacquebento.github.io/cprg-final-project/images/logos_directory/logo4.png"
+    },
+    {
+      "name": "Mary Beauty",
+      "address": "FC12",
+      "phone": "999-300-4456",
+      "website": "marybeauty.com",
+      "logo": "https://jacquebento.github.io/cprg-final-project/images/logos_directory/logo5.png"
+    },
+    {
+      "name": "Calystia Beauty Studio",
+      "address": "FC5",
+      "phone": "999-123-3000",
+      "website": "calystiastudio.com",
+      "logo": "https://jacquebento.github.io/cprg-final-project/images/logos_directory/logo6.png"
+    },
+    {
+      "name": "Angry Lion Art and Design",
+      "address": "CK15",
+      "phone": "999-900-9956",
+      "website": "angrylion.com",
+      "logo": "https://jacquebento.github.io/cprg-final-project/images/logos_directory/logo7.png"
+    }
+  ]
+}
