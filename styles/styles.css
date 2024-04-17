@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+
+:root{
+    --back1: #f6f5f1;
+    --fontcolor:#6f4c2e;
+    --highlight: #a37043;
+    --font1: 'Josefin Sans', sans-serif;
+    --font2: 'Poppins', sans-serif
+}
+
+body{
+  margin: 0 auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--back1);
+    font-family: var(--font1);
+}
+
+
+.logo {
+    margin: 20px auto;
+    width: 200px;
+    height: auto;
+  }
+
+.social{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+  }
+  
+.facelogo {
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+    margin-right: 5px;
+  }
+  
+.instalogo {
+    width: 25px;
+    height: 25px;
+  }
+
+li{
+    list-style-type: none;
+    margin-bottom: 15px;
+  }
+  
+.nav-link{
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 22px;
+  }
+
+.nav-link:hover{
+    color: var(--highlight);
+    transition: all 0.7s ease;
+  }
+  
+  
+.nav-item{
+    margin: 20px;
+  }
+  
+.nav-menu{
+    display: flex;
+    gap: 60px;
+  }
+
+#hero-img{
+    width: 100%;
+}
+
+#events {
+    font-family: var(--font1);
+    background-color: var(--back1);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 5px 5px;
+  } 
+  
+#events h3{
+    position: absolute;
+    margin-left: 20px;
+    color: var(--fontcolor);
+    font-family: var(--font1);
+    font-size: larger;
+    font-weight: 700;
+  }
+  
+#events p{
+    margin-left: 20px;
+  }
+
+h1{
+    font-family: var(--font1);
+  }
+  
+h2{
+    margin: 1rem 0 1rem 0;
+    text-align: center;
+    color: var(--highlight);
+  }
+
+h3 {
+    margin: 0 0 .25rem 0;
+    font-family: var(--font2);
+    font-size: medium;
+    font-weight: 300;
+    text-align: center;
+  }
+  
+p{
+    font-family: var(--font2);
+    font-size: medium;
+  }
+  
+hr {
+    height: 2px;
+    margin: 0 0;
+    background: var(--highlight);
+  }
+
+  main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  #hero{
+    display: block;
+    width: 100%;
+    grid-column: 1/4;
+    grid-row: 2/3;
+  }
+  
+  #hero-img{
+    margin-top: 0px;
+}
+
+  #events{
+    grid-column: 1/3;
+    grid-row: 3/4;
+    margin-top: 10px;
+  }
+  
+  #sale{
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+  
+  #spotlights{
+    grid-column: 1/4;
+    grid-row: 4/5;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  
+  
+.insidebox{
+    background-color: white;
+    height: auto;
+    padding: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  
+figcaption{
+    font-family: var(--font2);
+    text-align: center;
+  }
+  
+.members{
+    margin-top: 20px;
+    justify-self: center;
+  }
+  
+footer {
+    background: var(--back1);
+    padding: 0.5rem;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  /* directory page */
+
+.directory{
+    display: block;
+  }
+  
+  .toggle{
+    display: flex;
+    margin: 20px 40%;
+  }
+  
+  #grid, #list{
+    width: 100px;
+    margin-left: 20px;
+    background-color: var(--back1);
+    font-family: var(--font1);
+    font-weight: 900;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 1rem;
+    border-color:  var(--highlight);
+  }
+  
+  .members{
+    display: grid;
+    width: 300px;
+    justify-content: center;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: var(--highlight) solid 4px;
+    border-radius: .5rem;
+    box-shadow: 6px 6px 10px #3d3d3b;
+    
+  }
+    
+.directory section{
+    margin: 1em auto;
+    max-width: 900px;
+    width: 100%;
+  }
+  
+  .list section{
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0 auto;
+    text-align: left;
+    font-size: small;
+    
+  }
+  .list section:nth-child(even){
+    background-color: var(--back1);
+  }
+  .list section img{
+    display: none;
+  }
+
+.directory .cards{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+.list section {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+width: 100%;
+height: auto;
+
+}
+
+/* services page */
+
+.directory{
+    display: block;
+  }
+  
+  .content{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+  }
+  
+  .accordion-container{
+    text-align: center;
+    width: 100%;
+  }    
+  
+  .accordion-container p{
+    color: #444;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+  }
+  
+  .accordion {
+    display: block;
+    width: 100%;
+    background-color: var(--back1);
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    text-align: left;
+    border: none;
+    outline: none;
+    margin: 10px auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+    border-bottom: 4px solid var(--highlight);
+     
+    
+  }
+  
+  .panel {
+    margin: 0 20%;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  
+  .panel p{
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+  }
+  
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    float: right;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+  figure img{
+    width: 100%;
+}
+
+@media only screen and (max-width : 800px) {
+
+  .logo{
+    width: 150px;
+  }
+
+  .nav-menu{
+    display: block;
+  }
+
+  .nav-link{
+    font-size: medium;
+  }
+
+  .nav-item{
+    margin-top: -10px;
+  }
+
+  main{
+    display: block;
+  }
+
+  .list section h3{
+    font-size: small;
+    margin-top: 20px;
+  }
+
+  .list section{
+    grid-template-columns: 1fr 1fr;
+  }
+    
+}
+  
