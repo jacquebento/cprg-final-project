@@ -75,12 +75,71 @@ li{
 .nav-menu{
     display: flex;
     gap: 60px;
+    transition: all 0.5s ease-in-out;
   }
+
+.navbar{
+  display: flex;
+}
+
+  /* hambuger */
+
+  .hamburger{
+    display: block;
+    cursor: pointer;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    background-color: black;
+  }
+
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(25px) rotate(45deg);
+  }
+  
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(8px) rotate(-45deg);
+  }
+  
+  .active:after{
+    content: none;
+  }
+
+  .nav-menu{
+    display: none;
+  }
+  
+  .nav-item{
+    margin: 20px;
+  }
+  
+  .nav-menu.active{
+    display: contents;
+    transition: all 0.5s ease-in-out;
+  }
+
+
+  /* hero */
 
 #hero-img{
     width: 100%;
 }
 
+/* content 
+ */
 #events {
     font-family: var(--font1);
     background-color: var(--back1);
@@ -278,61 +337,7 @@ height: auto;
     text-align: center;
   }
   
-  .accordion-container{
-    text-align: center;
-    width: 100%;
-  }    
   
-  .accordion-container p{
-    color: #444;
-    font-size: 18px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: lighter;
-  }
-  
-  .accordion {
-    display: block;
-    width: 100%;
-    background-color: var(--back1);
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    text-align: left;
-    border: none;
-    outline: none;
-    margin: 10px auto;
-    box-sizing: border-box;
-    border-radius: 10px;
-    font-size: 20px;
-    font-family: 'Lato', sans-serif;
-    font-weight: lighter;
-    border-bottom: 4px solid var(--highlight);
-     
-    
-  }
-  
-  .panel {
-    margin: 0 20%;
-    display: none;
-    overflow: hidden;
-    transition: max-height 0.5s;
-  }
-  
-  .panel p{
-    font-family: 'Lato', sans-serif;
-    font-weight: lighter;
-  }
-  
-  .accordion:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    float: right;
-  }
-  
-  .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
-  }
-
   figure img{
     width: 100%;
 }
@@ -343,7 +348,7 @@ height: auto;
     width: 150px;
   }
 
-  .nav-menu{
+  .navbar{
     display: block;
   }
 

@@ -1,0 +1,54 @@
+.accordion-container{
+    text-align: center;
+    width: 100%;
+  }    
+  
+  .accordion-container p{
+    color: #444;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+  }
+  
+  .accordion {
+    display: block;
+    width: 100%;
+    background-color: var(--back1);
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    text-align: left;
+    border: none;
+    outline: none;
+    margin: 10px auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+    border-bottom: 4px solid var(--highlight);
+     
+    
+  }
+  
+  .panel {
+    margin: 0 20%;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  
+  .panel p{
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+  }
+  
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    float: right;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
