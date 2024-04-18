@@ -96,7 +96,6 @@ li{
     height: 3px;
     margin: 5px auto;
     text-decoration: none;
-    -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     background-color: black;
   }
@@ -114,7 +113,7 @@ li{
   }
   
   .active:after{
-    content: none;
+    color: red;
   }
 
   .nav-menu{
@@ -136,8 +135,7 @@ li{
     width: 100%;
 }
 
-/* content 
- */
+/* content */
 #events {
     font-family: var(--font1);
     background-color: var(--back1);
