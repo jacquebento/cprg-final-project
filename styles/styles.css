@@ -75,7 +75,6 @@ li{
 .nav-menu{
     display: flex;
     gap: 60px;
-    transition: all 0.5s ease-in-out;
   }
 
 .navbar{
@@ -128,7 +127,6 @@ li{
   
   .nav-menu.active{
     display: contents;
-    transition: all 0.5s ease-in-out;
   }
 
 
@@ -169,6 +167,7 @@ h2{
     margin: 1rem 0 1rem 0;
     text-align: center;
     color: var(--highlight);
+    font-family: var(--font2);
   }
 
 h3 {
@@ -289,11 +288,23 @@ footer {
     box-shadow: 6px 6px 10px #3d3d3b;
     
   }
-    
+
+  a{
+    font-family: var(--font1);
+    color: var(--fontcolor);
+    text-align: center;
+    font-size: large;
+    margin-top: 10px;
+  }
+
+  a:hover{
+    scale: 1.1;
+    transition: all 0.5s ease-out;
+  }
+
 .directory section{
     margin: 1em auto;
-    max-width: 900px;
-    width: 100%;
+    width: 25%;
   }
   
   .list section{
@@ -301,21 +312,20 @@ footer {
     border-radius: 0;
     box-shadow: none;
     margin: 0 auto;
-    text-align: left;
     font-size: small;
-    
+    align-items: center;
   }
-  .list section:nth-child(even){
+  .list section:nth-child(odd){
     background-color: var(--back1);
   }
   .list section img{
     display: none;
   }
 
-.directory .cards{
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .list section {
@@ -328,9 +338,9 @@ height: auto;
 
 /* services page */
 
-.directory{
-    display: block;
-  }
+#services{
+  display: block;
+}
   
   .content{
     font-family: 'Josefin Sans', sans-serif;
@@ -340,6 +350,7 @@ height: auto;
   
   figure img{
     width: 100%;
+  
 }
 
 @media only screen and (max-width : 800px) {

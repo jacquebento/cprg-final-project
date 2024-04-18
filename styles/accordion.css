@@ -1,6 +1,8 @@
 .accordion-container{
+    margin: 0 auto;
     text-align: center;
-    width: 100%;
+    width: 80%;
+    
   }    
   
   .accordion-container p{
@@ -12,7 +14,7 @@
   
   .accordion {
     display: block;
-    width: 100%;
+    width: 90%;
     background-color: var(--back1);
     color: #444;
     cursor: pointer;

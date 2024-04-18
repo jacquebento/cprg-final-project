@@ -25,12 +25,12 @@ const displayMembers = (members) => {
                 let name = document.createElement('h2'); 
                 let address = document.createElement('h3');
                 let phone = document.createElement('h3');
-                let website = document.createElement('h3');
+                let website = document.createElement('a');
                 
                 name.textContent = `${member.name}`; 
                 address.textContent = `Address: ${member.address}`;
                 phone.textContent = `Phone: ${member.phone}`;
-                website.textContent = `Website: ${member.website}`;
+                website.textContent = `${member.website}`;
                 
                 logo.setAttribute('src', member.logo);
                 logo.setAttribute('alt', `Logo of ${member.name}`);
@@ -38,6 +38,8 @@ const displayMembers = (members) => {
                 logo.setAttribute('width', '340');
                 logo.setAttribute('height', '440');
             
+                website.setAttribute('href', `index.html`);
+                website.setAttribute('aria-label', `${member.name} website`);
                 
                 card.appendChild(name); 
                 card.appendChild(address);
